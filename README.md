@@ -12,7 +12,7 @@ The scripts are available on GitHub: https://github.com/dvzinn/Cellcount-and-Ana
 Version 1.53t 24 August 2022 of Fiji ImageJ was used during this project.
 For viewing and altering code, Visual Studio Code is recommended.
 
-Two libraries have to be installed:
+Two libraries have to be installed for the Python scripts:
 - pandas
 - openpyxl
 
