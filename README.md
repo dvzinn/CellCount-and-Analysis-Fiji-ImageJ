@@ -1,4 +1,4 @@
-# Cellcount_and_Analysis_Fiji-ImageJ
+# Cellcount-and-Analysis-Fiji-ImageJ
  Scripts to make counting cells in Fiji ImageJ and saving the data less manual work, written in ImageJ Macro Language and Python.
  This includes:
  1. `invert_images.ijm`: reverting image colours, stacking those images and saving them,
@@ -25,7 +25,7 @@ pip install openpyxl
 ```
 
 ## Configuration and Implementation
-Every code file has a protocol which are also available on GitHub: https://github.com/dvzinn/Cellcount_and_Analysis_Fiji-ImageJ.git.
+Every code file has a protocol which are also available on GitHub: https://github.com/dvzinn/Cellcount-and-Analysis-Fiji-ImageJ.git.
 - `ImageJ invert_images.ijm` for `invert_images.ijm`.
 - `ImageJ set_environment protocol.pdf` for `set_environment.ijm`.
 - `Python merge_csv protocol.pdf` for `merge_csv.py`.
