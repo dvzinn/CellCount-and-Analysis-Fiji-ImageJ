@@ -7,7 +7,7 @@
  4. `extract_counts.py`: and gathering the counted cells per ImageJ Point Tool counter for every brain slice and writing the data into one CSV file. 
 
 ## Installation  
-The scripts are available on GitHub: https://github.com/dvzinn/Cellcount_and_Analysis_Fiji-ImageJ.git.
+The scripts are available on GitHub: https://github.com/dvzinn/Cellcount-and-Analysis-Fiji-ImageJ.git.
 
 Version 1.53t 24 August 2022 of Fiji ImageJ was used during this project.
 For viewing and altering code, Visual Studio Code is recommended.
