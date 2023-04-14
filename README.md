@@ -6,6 +6,8 @@
  3. `merge_csv.py`: gathering seperate files as multiple sheets inside one Excel file, filtering the data and calculating contrast for each point,
  4. `extract_counts.py`: and gathering the counted cells per ImageJ Point Tool counter for every brain slice and writing the data into one CSV file. 
 
+`set_environment.ijm` is likely the most generally useful script, the other scripts are not necesserily needed to make use of this.
+
 ## Installation  
 The scripts are available on GitHub: https://github.com/dvzinn/Cellcount-and-Analysis-Fiji-ImageJ.git.
 
