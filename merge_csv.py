@@ -45,6 +45,7 @@ for f in glob.glob(measurements):
     # add a column named "Contrast", consisting of the values in contrast_one and contrast_two
     data["Contrast"] = pd.concat([contrast_one, contrast_two])
     data = data[data["Counter"] <= 2]  # filter the data by selecting only the rows where the values in the "Counter" column are less than or equal to 2
+    # if you want to include more counters, the 2 can be changed in the amount of counters of interest
     # the filtered DataFrame is then assigned back to the data variable, effectively removing rows where the "Counter" value is greater than 2 from the DataFrame
 
 
