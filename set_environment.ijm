@@ -46,8 +46,8 @@ if (endsWith(File.name, ".tif")) {
 	// save the ROI's as well (the name that will be saved is the same as the name from the opened image) 
 	run("Clear Results"); // clear results before measuring
  	roiManager("Measure");
- 	saveAs("Results", ROI_folder + replace(File.name + "_ROI", ".tif", ".csv")); // save ROI data
-
+ 	saveAs("Results", ROI_folder + replace(File.name, ".csv", "_ROI.csv")); // save ROI data
+	
 	// clear the working space
 	run("Clear Results");
 	roiManager("Reset");
