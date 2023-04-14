@@ -9,7 +9,7 @@
 `set_environment.ijm` is likely the most generally useful script, the other scripts are not necesserily needed to make use of this.
 
 ## Installation  
-The scripts are available on GitHub: https://github.com/dvzinn/Cellcount-and-Analysis-Fiji-ImageJ.git.
+The scripts are available on GitHub: https://github.com/dvzinn/CellCount-and-Analysis-Fiji-ImageJ.git.
 
 Version 1.53t 24 August 2022 of Fiji ImageJ was used during this project.
 For viewing and altering code, Visual Studio Code is recommended.
@@ -27,7 +27,7 @@ pip install openpyxl
 ```
 
 ## Configuration and Implementation
-Every code file has a protocol which are also available on GitHub: https://github.com/dvzinn/Cellcount-and-Analysis-Fiji-ImageJ.git.
+Every code file has a protocol which are also available on GitHub: https://github.com/dvzinn/CellCount-and-Analysis-Fiji-ImageJ.git.
 - `ImageJ invert_images.ijm` for `invert_images.ijm`.
 - `ImageJ set_environment protocol.pdf` for `set_environment.ijm`.
 - `Python merge_csv protocol.pdf` for `merge_csv.py`.
