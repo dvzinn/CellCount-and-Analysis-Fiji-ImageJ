@@ -5,14 +5,15 @@
 // This macro sets the environment that can be used for counting analysis of pictures. 
 // The picture, Multipoint Tool, Results and ROI-manager will be opened when running this macro. 
 // Then you can select the ROI and place points on the image.
-// After activating this macro again, the picture with all points and ROI's will be saved, as well as the data of the points.
+// After activating this macro again, the picture with all points and ROI's will be saved, as well as the data of the points
+// and the ROI measurement data.
 
 // This macro can be activated by installing it as a hotkey for easier use. 
 // This can be done by putting the file inside the Fiji.app > plugins folder.
 // Then, you can make the shortcut by going to Fiji: Plugins > Shortcuts > Add Shortcut...
 // Choose a shortcut (for example F1) and look for the name of this script (set filename) in the list.
 
-// Before starting, change the three folders to the ones you will use. This is the only part that should be personalised.
+// Before starting, change the four folders to the ones you will use. This is the only part that should be personalised.
 
 
 // change the folders with your own. Make sure to use these "/" instead of "\" in the folder path.
@@ -26,6 +27,8 @@ done_folder = "C:/Users/Danie/Documents/Internship/Counting/Done/"
 // folder for saving the multipoint data:
 measurements_folder = "C:/Users/Danie/Documents/Internship/Counting/Measurements/"
 
+// folder in which the sheets with ROI's are saved:
+ROI_folder = "C:/Users/Danie/Documents/Internship/Counting/Measurements/ROI_folder/"
 
 // first, if there is an image already opened, save the current file in the right place, save the data and close it
 if (endsWith(File.name, ".tif")) {
@@ -39,6 +42,11 @@ if (endsWith(File.name, ".tif")) {
 	saveAs("Tiff", done_folder + File.name); // folder for saving the analysed images
 	saveAs("Results", measurements_folder + replace(File.name, ".tif", ".csv")); 
 	// folder for saving the multipoint data
+
+	// save the ROI's as well (the name that will be saved is the same as the name from the opened image) 
+	run("Clear Results"); // clear results before measuring
+ 	roiManager("Measure");
+ 	saveAs("Results", ROI_folder + replace(File.name + "_ROI", ".tif", ".csv")); // save ROI data
 
 	// clear the working space
 	run("Clear Results");
