@@ -1,5 +1,5 @@
 # Cellcount-and-Analysis-Fiji-ImageJ
- Scripts to make counting cells (after immunohistochemistry for example) in Fiji ImageJ and saving the data less manual work, written in ImageJ Macro Language and Python.
+ Scripts to make counting cells (e.g. after immunohistochemistry) in Fiji ImageJ and saving the data less manual work, written in ImageJ Macro Language and Python.
  This includes:
  1. `invert_images.ijm`: inverting image colours, stacking those images and saving them,
  2. `set_environment.ijm`: automatically configuring an environment for analysing images, tracking which ones have been analysed already, opening a new image to analyse and saving all image changes and the counting + ROI data,
