@@ -27,13 +27,13 @@ pip install openpyxl
 ```
 
 ## Configuration and Implementation
-Every code file has a protocol which are also available on GitHub: https://github.com/dvzinn/CellCount-and-Analysis-Fiji-ImageJ.git.
+All code files have a protocols, which are also available on GitHub: https://github.com/dvzinn/CellCount-and-Analysis-Fiji-ImageJ.git.
 - `ImageJ invert_images.ijm` for `invert_images.ijm`.
 - `ImageJ set_environment protocol.pdf` for `set_environment.ijm`.
 - `Python merge_csv protocol.pdf` for `merge_csv.py`.
 - `Python extract_counts.pdf` for `extract_counts.py`.
 
-For optimal use, the protocols and code should be used in this order (if all needed).
+For optimal use, the protocols and code should be used in this order (if all are needed).
 
 ## Limitations
 - After making changes in the ImageJ code files, ImageJ should be restarted. 
