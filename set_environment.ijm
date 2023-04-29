@@ -28,7 +28,7 @@ done_folder = "C:/Users/Danie/Documents/Internship/Counting/Done/"
 measurements_folder = "C:/Users/Danie/Documents/Internship/Counting/Measurements/"
 
 // folder in which the sheets with ROI's are saved:
-ROI_folder = "C:/Users/Danie/Documents/Internship/Counting/Measurements/ROI_folder/"
+ROI_folder = "C:/Users/Danie/Documents/Internship/Counting/ROI_folder/"
 
 // first, if there is an image already opened, save the current file in the right place, save the data and close it
 if (endsWith(File.name, ".tif")) {
