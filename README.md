@@ -4,7 +4,8 @@
  1. `invert_images.ijm`: inverting image colours, stacking those images and saving them,
  2. `set_environment.ijm`: automatically configuring an environment for analysing images, tracking which ones have been analysed already, opening a new image to analyse and saving all image changes and the counting + ROI data,
  3. `merge_csv.py`: gathering seperate files as multiple sheets inside one Excel file, filtering the data and calculating contrast for each point,
- 4. `extract_counts.py`: and gathering the counted cells per ImageJ Point Tool counter for every brain slice and writing the data into one CSV file. 
+ 4. `extract_counts.py`: gathering the counted cells per ImageJ Point Tool counter for every brain slice and writing the data into one CSV file,
+ 5. `merge_counts_ROI.py`: and combining the counted cells with the measured Regions of Interest (ROI) into one CSV file.
 
 `set_environment.ijm` is likely the most generally useful script, the other scripts are not necesserily needed to make use of this.
 
@@ -32,9 +33,10 @@ All code files have a protocols, which are also available on GitHub: https://git
 - `ImageJ set_environment protocol.pdf` for `set_environment.ijm`.
 - `Python merge_csv protocol.pdf` for `merge_csv.py`.
 - `Python extract_counts.pdf` for `extract_counts.py`.
+- The protocol for `merge_counts_ROI.py` is still in progress.
 
 For optimal use, the protocols and code should be used in this order (if all are needed).
 
 ## Limitations
 - After making changes in the ImageJ code files, ImageJ should be restarted. 
-- Running `merge_csv.py` and `extract_counts.py` multiple times without changing the file, will overwrite the files.
+- Running `merge_csv.py`, `extract_counts.py` or `merge_counts_ROI.py` multiple times without changing the file, will overwrite the files.
