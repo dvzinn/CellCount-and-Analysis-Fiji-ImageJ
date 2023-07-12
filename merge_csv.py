@@ -23,7 +23,7 @@ dataframes = {} # initialise an empty dictionary called dataframes that will be 
 for f in glob.glob(measurements):
     data = pd.read_csv(f)
 
-    # Use lines 23 - 44 if certain counters are used for measuring contrast. In this case, counter 1 and 2 contain the real data, counters 3 (beloning to 1)
+    # Use lines 30 - 49 if certain counters are used for measuring contrast. In this case, counter 1 and 2 contain the real data, counters 3 (beloning to 1)
     # and 4 (beloning to 2) include measurements of points that were placed next to the measurements, to calculate contrast. This code subtracts the value
     # of the 1st counter from the 3rd counter, and the 2nd counter from the 4th counter. This code can be commented if not needed.
     
